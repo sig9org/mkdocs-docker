@@ -1,8 +1,8 @@
-FROM alpine:3.5
+FROM alpine:latest
 
 RUN apk add --update python py-pip \
  && pip install --upgrade pip \
- && pip install mkdocs \
+ && pip install mkdocs==0.16.3 \
  && pip install mkdocs-material \
  && pip install pygments \
  && pip install hbfm \
